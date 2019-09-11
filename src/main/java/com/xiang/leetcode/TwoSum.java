@@ -45,13 +45,4 @@ public class TwoSum {
         throw new IllegalArgumentException("No two sum solution");
     }
 
-    public static void main(String[] args) {
-
-        int[] nums = new int[]{2, 11, 15, 7};
-        int target = 9;
-
-        int[] ints = twoSum2(nums, target);
-
-        System.out.println(JSON.toJSON(ints));
-    }
 }
