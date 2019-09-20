@@ -14,7 +14,7 @@ public class AddTwoNumbers {
 
     private static int[] number = new int[]{1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000};
 
-    public  ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
         BigDecimal value1 = toValue(l1);
         BigDecimal value2 = toValue(l2);
@@ -23,7 +23,7 @@ public class AddTwoNumbers {
         return toNode(multiply);
     }
 
-    private  ListNode toNode(BigDecimal val) {
+    private ListNode toNode(BigDecimal val) {
 
         String format = String.valueOf(val);
         char[] chars = format.toCharArray();
@@ -41,7 +41,7 @@ public class AddTwoNumbers {
         return root;
     }
 
-    private  int[] reverse(char[] chars) {
+    private int[] reverse(char[] chars) {
         int length = chars.length;
         int[] chars1 = new int[length];
         for (int i = 0; i < length; i++) {
@@ -51,7 +51,7 @@ public class AddTwoNumbers {
         return chars1;
     }
 
-    private  BigDecimal toValue(ListNode l1) {
+    private BigDecimal toValue(ListNode l1) {
         List<Integer> list = new ArrayList<>();
         if (l1 == null) {
             return BigDecimal.ZERO;
