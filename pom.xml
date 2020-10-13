@@ -10,7 +10,7 @@
 
     <properties>
         <!-- test libs -->
-        <junit_version>4.12</junit_version>
+        <junit_version>4.13.1</junit_version>
         <mockito_core_version>2.7.22</mockito_core_version>
     </properties>
 
